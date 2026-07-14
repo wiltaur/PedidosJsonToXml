@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// RegistrO de los validadores de FluentValidation
+// Registro de los validadores de FluentValidation
 builder.Services.AddValidatorsFromAssemblyContaining<PedidoRequestValidator>();
 
 // Registro del HttpClient para el consumo del Endpoint Externo
